@@ -5,7 +5,7 @@ version=$(cat leaf_deploy/version)
 
 echo 'docker build ...'
 docker build leaf_deploy -t leaf:$version
-if [ "$(docker ps -aq -f name=^mangosteen-prod-1$)" ]; then
+if [ "$(docker ps -aq -f name=^leaf-prod$)" ]; then
   echo 'docker rm ...'
   docker rm -f $container_name
 fi
