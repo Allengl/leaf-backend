@@ -61,3 +61,5 @@ production:
   database: leaf_production
   username: leaf
   password: <%= ENV["LEAF_DATABASE_PASSWORD"] %>
+  host: <%= ENV["DB_HOST"] %>
+
