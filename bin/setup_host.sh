@@ -11,6 +11,4 @@ if [ "$(docker ps -aq -f name=^leaf-prod$)" ]; then
 fi
 echo 'docker run ...'
 docker run -e DB_HOST=$DB_HOST -e RAILS_MASTER_KEY=$RAILS_MASTER_KEY -d -p 3000:3000 --network=network1 -e DB_PASSWORD=$DB_PASSWORD --name=$container_name leaf:$version
-echo 'docker exec ...'
-docker exec -it $container_name bin/rails db:create db:migrate
 echo 'DONE!'
