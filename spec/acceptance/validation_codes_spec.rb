@@ -1,14 +1,12 @@
 require 'rails_helper'
-require 'rspec_api_documentation/dsl'
-resource "验证码" do
-  post "/api/v1/validation_codes" do
-    parameter :email, type: :string
-    let(:email) { '1@qq.com' }
-    example "请求发送验证码" do
-      expect(UserMailer).to receive(:welcome_email).with(email)
-      do_request
-      expect(status).to eq 200
-      expect(response_body).to eq ' '
+
+RSpec.describe "ValidationCodes", type: :request do
+  describe "验证码" do
+    it "发送太频繁就会返回 429" do
+      post '/api/v1/validation_codes', params: {email: '1942813644@qq.com'}
+      expect(response).to have_http_status(200)
+      post '/api/v1/validation_codes', params: {email: '1942813644@qq.com'}
+      expect(response).to have_http_status(429)
     end
   end
 end
