@@ -12,7 +12,10 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
+
+
 # require "rails/test_unit/railtie"
+require_relative '../lib/auto_jwt'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -35,5 +38,6 @@ module Leaf
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.middleware.use AutoJwt
   end
 end
