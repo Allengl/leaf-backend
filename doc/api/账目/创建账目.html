@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>标签 API</title>
+    <title>账目 API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,11 +106,11 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>标签 API</h1>
+      <h1>账目 API</h1>
 
       <div class="article">
-        <h2>创建标签</h2>
-        <h3>POST /api/v1/tags</h3>
+        <h2>创建账目</h2>
+        <h3>POST /api/v1/items</h3>
 
           <h3>Parameters</h3>
           <table class="parameters table table-striped table-bordered table-condensed">
@@ -123,18 +123,34 @@ table th, table td {
             <tbody>
               <tr>
                 <td class="required">
-                    <span class="name">name</span>
+                    <span class="name">amount</span>
                 </td>
                 <td>
-                  <span class="description">名称</span>
+                  <span class="description">金额（单位：分）</span>
                 </td>
               </tr>
               <tr>
                 <td class="required">
-                    <span class="name">sign</span>
+                    <span class="name">kind</span>
                 </td>
                 <td>
-                  <span class="description">符号</span>
+                  <span class="description">类型</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="required">
+                    <span class="name">happen_at</span>
+                </td>
+                <td>
+                  <span class="description">发生时间</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="required">
+                    <span class="name">tags_id</span>
+                </td>
+                <td>
+                  <span class="description">标签列表（只传ID）</span>
                 </td>
               </tr>
             </tbody>
@@ -154,39 +170,39 @@ table th, table td {
                     <span class="name">resource[id]</span>
                 </td>
                 <td>
-                  <span class="description">ID</span>
+                  <span class="description">Resource</span>
                 </td>
               </tr>
               <tr>
                 <td>
-                    <span class="name">resource[name]</span>
+                    <span class="name">resource[amount]</span>
                 </td>
                 <td>
-                  <span class="description">名称</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">resource[sign]</span>
-                </td>
-                <td>
-                  <span class="description">符号</span>
+                  <span class="description">Resource amount</span>
                 </td>
               </tr>
               <tr>
                 <td>
-                    <span class="name">resource[user_id]</span>
+                    <span class="name">resource[kind]</span>
                 </td>
                 <td>
-                  <span class="description">用户ID</span>
+                  <span class="description">Resource kind</span>
                 </td>
               </tr>
               <tr>
                 <td>
-                    <span class="name">resource[deleted_at]</span>
+                    <span class="name">resource[happen_at]</span>
                 </td>
                 <td>
-                  <span class="description">删除时间</span>
+                  <span class="description">Resource happen at</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">resource[tags_id]</span>
+                </td>
+                <td>
+                  <span class="description">Resource tags</span>
                 </td>
               </tr>
             </tbody>
@@ -196,18 +212,18 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Version: HTTP/1.0
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNDgsImV4cCI6MTY3NjExMzQwMn0.LdVFn1Kef--FnEj29RoHiiGW5ZjII4_KMjeJ-dVi-v8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNDQsImV4cCI6MTY3NjExMzQwMn0.MQerQz5FFAoj2-kOjtEU32z29HpZV6F23XW-POnToy0
 Accept: application/json
 Content-Type: application/json
 Host: example.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/tags</pre>
+          <pre class="request route highlight">POST /api/v1/items</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"name":"x","sign":"x"}</pre>
+            <pre class="request body">{"amount":9900,"kind":"expenses","happen_at":"2020-10-30T00:00:00+08:00","tags_id":[542,543]}</pre>
 
 
             <h3>Response</h3>
@@ -220,23 +236,24 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Vary: Accept
-ETag: W/&quot;61513cf3b68b07f553d473639a4b8ffe&quot;
+ETag: W/&quot;4d11bce37da11f811fbce8fc17d55ef3&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: da9276c9-2e0b-48c8-b08d-1151db02c162
-X-Runtime: 0.002956
-Content-Length: 157</pre>
+X-Request-Id: 12c994e0-82f7-4803-880e-7f163db9fccf
+X-Runtime: 0.002349
+Content-Length: 176</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
               <pre class="response body">{
   &quot;resource&quot;: {
-    &quot;id&quot;: 556,
-    &quot;user_id&quot;: 148,
-    &quot;name&quot;: &quot;x&quot;,
-    &quot;sign&quot;: &quot;x&quot;,
-    &quot;deleted_at&quot;: null,
-    &quot;created_at&quot;: &quot;2023-02-11T09:03:22.602Z&quot;,
-    &quot;updated_at&quot;: &quot;2023-02-11T09:03:22.602Z&quot;
+    &quot;id&quot;: 78,
+    &quot;user_id&quot;: null,
+    &quot;amount&quot;: 9900,
+    &quot;notes&quot;: null,
+    &quot;tags_id&quot;: null,
+    &quot;happen_at&quot;: null,
+    &quot;created_at&quot;: &quot;2023-02-11T09:03:22.554Z&quot;,
+    &quot;updated_at&quot;: &quot;2023-02-11T09:03:22.554Z&quot;
   }
 }</pre>
       </div>
