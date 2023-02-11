@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Api::V1::Tags", type: :request do
-  describe "获取标签" do
+  describe "获取标签列表" do
     it "未登录获取标签" do
       get '/api/v1/tags'
       expect(response).to have_http_status(401)
