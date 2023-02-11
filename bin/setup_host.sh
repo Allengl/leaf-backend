@@ -1,9 +1,7 @@
 root=leaf_deploy 
 version=$(cat $root/version)
-
 container_name=leaf-prod
 db_container_name=db-for-leaf
-
 DB_HOST=$db_container_name
 DB_PASSWORD=123456
 
@@ -12,7 +10,7 @@ function set_env {
   hint=$2
   [[ ! -z "${!name}" ]] && return
   while [ -z "${!name}" ]; do
-    [[ ! -z "$hint" ]] && echo "> 请输入 $name: $hint" || echo "> 请输入 $name:"
+    [[ ! -z "$hint" ]] && echo "> 请输入 $name: $hint" || echo "> 请输入 $name:" 
     read $name
   done
   sed -i "1s/^/export $name=${!name}\n/" ~/.bashrc
@@ -25,7 +23,6 @@ function title {
   echo "###############################################################################" 
   echo 
 }
-
 title '设置远程机器的环境变量'
 set_env DB_HOST
 set_env DB_PASSWORD
@@ -45,15 +42,12 @@ else
             postgres:14
   echo '创建成功'
 fi
-
 title 'docker build'
 docker build $root -t leaf:$version
-
 if [ "$(docker ps -aq -f name=^leaf-prod$)" ]; then
   title 'docker rm'
   docker rm -f $container_name
 fi
-
 title 'docker run'
 docker run -d -p 3000:3000 \
            --network=network1 \
@@ -62,7 +56,6 @@ docker run -d -p 3000:3000 \
            -e DB_PASSWORD=$DB_PASSWORD \
            -e RAILS_MASTER_KEY=$RAILS_MASTER_KEY \
            leaf:$version
-
 echo
 echo "是否要更新数据库？[y/N]"
 read ans
@@ -71,5 +64,4 @@ case $ans in
     n|N|2  )  echo "no" ;;
     ""     )  echo "no" ;;
 esac
-
 title '全部执行完毕'
