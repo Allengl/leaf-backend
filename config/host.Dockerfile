@@ -2,15 +2,15 @@
 FROM ruby:3.0.0
 
 ENV RAILS_ENV production
-RUN mkdir /mangosteen
+RUN mkdir /leaf
 RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
-WORKDIR /mangosteen
-ADD Gemfile /mangosteen
-ADD Gemfile.lock /mangosteen
-ADD vendor/cache.tar.gz /mangosteen/vendor/
-ADD vendor/rspec_api_documentation.tar.gz /mangosteen/vendor/ 
+WORKDIR /leaf
+ADD Gemfile /leaf
+ADD Gemfile.lock /leaf
+ADD vendor/cache.tar.gz /leaf/vendor/
+ADD vendor/rspec_api_documentation.tar.gz /leaf/vendor/ 
 RUN bundle config set --local without 'development test'
 RUN bundle install --local
 
-ADD mangosteen-*.tar.gz ./
+ADD leaf-*.tar.gz ./
 ENTRYPOINT bundle exec puma
