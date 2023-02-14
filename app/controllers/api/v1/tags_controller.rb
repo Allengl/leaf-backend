@@ -3,17 +3,20 @@ class Api::V1::TagsController < ApplicationController
     current_user = User.find request.env["current_user_id"]
     return render status: :not_found if current_user.nil?
     tags = Tag.where(user_id: current_user.id).page(params[:page])
+    tags = tags.where(kind: params[:kind]) unless params[:kind].nil?
     render json: { resources: tags, pager: {
       page: params[:page] || 1,
       per_page: Tag.default_per_page,
       count: Tag.count,
     } }
   end
+
   def show
     tag = Tag.find params[:id]
-    return head :forbidden unless tag.user_id == request.env['current_user_id']
-    render json: {resource: tag}
+    return head :forbidden unless tag.user_id == request.env["current_user_id"]
+    render json: { resource: tag }
   end
+
   def create
     current_user = User.find request.env["current_user_id"]
     return render status: 401 if current_user.nil?
@@ -34,6 +37,7 @@ class Api::V1::TagsController < ApplicationController
       render json: { errors: tag.errors }, status: :unprocessable_entity
     end
   end
+
   def destroy
     tag = Tag.find params[:id]
     return head :forbidden unless tag.user_id == request.env["current_user_id"]
