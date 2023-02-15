@@ -22,6 +22,17 @@ RSpec.describe "Items", type: :request do
       json = JSON.parse(response.body)
       expect(json["resources"].size).to eq 1
     end
+    it "按 kind 筛选" do
+      user = create :user
+      create :item, kind: 'income', amount: 200, user: user
+      create :item, kind: 'expenses', amount: 100, user: user
+
+      get "/api/v1/items?kind=income", headers: user.generate_auth_header
+      expect(response).to have_http_status 200
+      json = JSON.parse(response.body)
+      expect(json["resources"].size).to eq 1
+      expect(json["resources"][0]["amount"]).to eq 200
+    end
     it "按时间筛选" do
       user1 = create :user
       item1 = create :item, happen_at: "2018-01-02", user: user1
