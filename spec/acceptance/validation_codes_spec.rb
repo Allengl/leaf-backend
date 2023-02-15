@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
+
 resource "验证码" do
   post "/api/v1/validation_codes" do
     parameter :email, type: :string
