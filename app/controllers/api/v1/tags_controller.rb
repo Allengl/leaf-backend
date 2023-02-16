@@ -47,7 +47,6 @@ class Api::V1::TagsController < ApplicationController
       begin
         Item.where('tag_ids && ARRAY[?]::bigint[]', [tag.id])
         .update!(deleted_at: Time.now)
-        end
         tag.save!
       rescue
         return head 422
