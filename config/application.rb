@@ -40,5 +40,6 @@ module Leaf
     config.api_only = true
     config.middleware.use AutoJwt
     config.i18n.default_locale = "zh-CN"
+    config.time_zone = 'Beijing'
   end
 end
