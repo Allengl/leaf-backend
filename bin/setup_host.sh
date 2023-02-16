@@ -56,12 +56,20 @@ docker run -d -p 3000:3000 \
            -e DB_PASSWORD=$DB_PASSWORD \
            -e RAILS_MASTER_KEY=$RAILS_MASTER_KEY \
            leaf:$version
-echo
-echo "是否要更新数据库？[y/N]"
-read ans
-case $ans in
-    y|Y|1  )  echo "yes"; title '更新数据库'; docker exec $container_name bin/rails db:create db:migrate ;;
-    n|N|2  )  echo "no" ;;
-    ""     )  echo "no" ;;
-esac
+if [[ ! -z "$need_migrate" ]]; then
+  title '更新数据库'
+  docker exec $container_name bin/rails db:create db:migrate
+fi
+
+if [ "$(docker ps -aq -f name=^${nginx_container_name}$)" ]; then
+  title 'doc: docker rm'
+  docker rm -f $nginx_container_name
+fi
+title 'doc: docker run'
+docker run -d -p 8080:80 \
+           --network=network1 \
+           --name=$nginx_container_name \
+           -v /home/$user/deploys/$version/api:/usr/share/nginx/html:ro \
+           nginx:latest
+
 title '全部执行完毕'
