@@ -8,6 +8,8 @@ gemfile=$current_dir/../Gemfile
 gemfile_lock=$current_dir/../Gemfile.lock
 vendor_dir=$current_dir/../vendor
 vendor_1=rspec_api_documentation
+api_dir=$current_dir/../doc/api
+frontend_dir=$cache_dir/frontend
 
 function title {
   echo 
@@ -31,6 +33,12 @@ title "打包本地依赖 ${vendor_1}"
 bundle cache --quiet
 tar -cz -f "$vendor_dir/cache.tar.gz" -C ./vendor cache
 tar -cz -f "$vendor_dir/$vendor_1.tar.gz" -C ./vendor $vendor_1
+title '打包前端代码'
+mkdir -p $frontend_dir
+rm -rf $frontend_dir/repo
+git clone git@github.com:Allengl/leaf-fe.git $frontend_dir/repo
+cd $frontend_dir/repo && pnpm install && pnpm run build; cd -
+tar -cz -f "$frontend_dir/dist.tar.gz" -C "$frontend_dir/repo/dist" .
 title '创建远程目录'
 mkdir -p $deploy_dir/vendor
 title '上传源代码和依赖'
@@ -42,8 +50,12 @@ cp $vendor_dir/cache.tar.gz $deploy_dir/vendor/
 yes | rm $vendor_dir/cache.tar.gz
 cp $vendor_dir/$vendor_1.tar.gz $deploy_dir/vendor/
 yes | rm $vendor_dir/$vendor_1.tar.gz
+title '上传前端代码'
+scp "$frontend_dir/dist.tar.gz" $deploy_dir/
+yes | rm -rf $frontend_dir
 title '上传 Dockerfile'
 cp $current_dir/../config/host.Dockerfile $deploy_dir/Dockerfile
+scp $current_dir/../config/nginx.default.conf $deploy_dir/
 title '上传 setup 脚本'
 cp $current_dir/setup_host.sh $deploy_dir/
 title '上传版本号'

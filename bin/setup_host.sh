@@ -1,9 +1,11 @@
+user=leaf
 root=leaf_deploy 
 version=$(cat $root/version)
 container_name=leaf-prod
 db_container_name=db-for-leaf
 DB_HOST=$db_container_name
 DB_PASSWORD=123456
+nginx_container_name=leaf-nginx
 
 function set_env {
   name=$1
@@ -66,10 +68,17 @@ if [ "$(docker ps -aq -f name=^${nginx_container_name}$)" ]; then
   docker rm -f $nginx_container_name
 fi
 title 'doc: docker run'
+cd leaf_deploy
+rm -rf ./dist
+mkdir ./dist
+tar xf dist.tar.gz --directory=./dist
+cd -
 docker run -d -p 8080:80 \
            --network=network1 \
            --name=$nginx_container_name \
-           -v /home/$user/deploys/$version/api:/usr/share/nginx/html:ro \
+           -v /leaf_deploy/nginx.default.conf:/etc/nginx/conf.d/default.conf \
+           -v /leaf_deploy/dist:/usr/share/nginx/html \
+           -v /leaf_deploy/api:/usr/share/nginx/html/apidoc \
            nginx:latest
 
 title '全部执行完毕'
