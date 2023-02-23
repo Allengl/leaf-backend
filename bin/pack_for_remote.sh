@@ -1,4 +1,5 @@
-# 注意修改 user 和 ip
+# 注意修改 user 和 ip   
+# 第一次部署到生产环境时 need_migrate=1 bin/pack_for_remote.sh  一定要加上 need_migrate=1
 user=leaf
 ip=106.14.66.155
 

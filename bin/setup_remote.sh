@@ -56,6 +56,7 @@ docker run -d -p 3000:3000 \
 if [[ ! -z "$need_migrate" ]]; then
   title '更新数据库'
   docker exec $container_name bin/rails db:create db:migrate
+  title '更新数据库完毕'
 fi
 if [ "$(docker ps -aq -f name=^${nginx_container_name}$)" ]; then
   title 'doc: docker rm'
