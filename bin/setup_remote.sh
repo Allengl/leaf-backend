@@ -41,7 +41,7 @@ else
 fi
 title 'app: docker build'
 docker build $root -t leaf:$version
-if [ "$(docker ps -aq -f name=^leaf-prod-1$)" ]; then
+if [ "$(docker ps -aq -f name=^leaf-prod$)" ]; then
   title 'app: docker rm'
   docker rm -f $container_name
 fi
