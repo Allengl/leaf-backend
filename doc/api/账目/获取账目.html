@@ -180,18 +180,18 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Version: HTTP/1.0
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyNzM5LCJleHAiOjE2NzcxNjM0MTV9.lIcuhMmrPy5_vFc17TY3GcEWGhcoLE6kFrJ_h2AHYcI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyODI5LCJleHAiOjE2NzcxNjUzMzV9.dOPpr9BU63vOfy29n6Ux6GmuRPt7JUAG68quBJM54K8
 Accept: application/json
 Content-Type: application/json
 Host: example.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/items?created_after=2023-02-13+12%3A43%3A35+%2B0000&amp;created_before=2023-03-05+12%3A43%3A35+%2B0000</pre>
+          <pre class="request route highlight">GET /api/v1/items?created_after=2023-02-13+13%3A15%3A35+%2B0000&amp;created_before=2023-03-05+13%3A15%3A35+%2B0000</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">created_after: 2023-02-13 12:43:35 +0000
-created_before: 2023-03-05 12:43:35 +0000</pre>
+            <pre class="request query_parameters highlight">created_after: 2023-02-13 13:15:35 +0000
+created_before: 2023-03-05 13:15:35 +0000</pre>
 
 
 
@@ -204,10 +204,10 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;63f22a6e8f26ba80f85e7152dc3ed545&quot;
+ETag: W/&quot;872438fae51f56c4541fc79059032d70&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: da1080bf-472a-4fde-8a2b-3ab3a225fea9
-X-Runtime: 0.043221
+X-Request-Id: 85e4eadf-742f-4fed-9478-144cbf583714
+X-Runtime: 0.042542
 vary: Accept, Origin
 Content-Length: 10834</pre>
             <h4>Status</h4>
@@ -216,651 +216,651 @@ Content-Length: 10834</pre>
               <pre class="response body">{
   &quot;resources&quot;: [
     {
-      &quot;id&quot;: 4682,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 5864,
+      &quot;id&quot;: 4839,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 1820,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.493+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.493+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4840,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 5801,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.122+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.122+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.496+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.496+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4683,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 3299,
+      &quot;id&quot;: 4841,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 3271,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.126+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.126+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4684,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 9847,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.128+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.128+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4685,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 5175,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.131+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.131+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.499+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.499+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4686,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 8449,
+      &quot;id&quot;: 4842,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 4791,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.133+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.133+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4687,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 7930,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.135+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.135+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.501+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.501+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4688,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 8453,
+      &quot;id&quot;: 4843,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 5174,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.136+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.136+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4689,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 7128,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.138+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.138+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.504+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.504+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4690,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 5734,
+      &quot;id&quot;: 4844,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 2878,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.507+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.507+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4845,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 8727,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.140+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.140+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.509+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.509+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4691,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 6210,
+      &quot;id&quot;: 4846,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 5129,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.142+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.142+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.511+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.511+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4692,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 3402,
+      &quot;id&quot;: 4847,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 7411,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.144+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.144+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4693,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 4470,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.146+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.146+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4694,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 8932,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.148+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.148+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4695,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 1574,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.150+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.150+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4696,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 1653,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.152+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.152+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4697,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 4728,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.154+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.154+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4698,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 7200,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.158+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.158+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4699,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 7457,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.161+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.161+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4700,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 2738,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.165+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.165+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.514+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.514+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4701,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 5004,
+      &quot;id&quot;: 4848,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 3000,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
-      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.167+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.167+08:00&quot;,
+      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.516+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.516+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4702,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 8229,
+      &quot;id&quot;: 4849,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 5626,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
-      ],
-      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.169+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.169+08:00&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 4703,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 6502,
-      &quot;notes&quot;: null,
-      &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.171+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.171+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.518+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.518+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4704,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 3500,
+      &quot;id&quot;: 4850,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 9907,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.173+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.173+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.519+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.519+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4705,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 7762,
+      &quot;id&quot;: 4851,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 9840,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
-      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.175+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.175+08:00&quot;,
+      &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.521+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.521+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 4706,
-      &quot;user_id&quot;: 2739,
-      &quot;amount&quot;: 1035,
+      &quot;id&quot;: 4852,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 4830,
       &quot;notes&quot;: null,
       &quot;tag_ids&quot;: [
-        7432
+        7679
       ],
       &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
-      &quot;created_at&quot;: &quot;2023-02-23T20:43:35.177+08:00&quot;,
-      &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.177+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.523+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.523+08:00&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 7432,
-          &quot;user_id&quot;: 2739,
-          &quot;name&quot;: &quot;Qua.&quot;,
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
           &quot;sign&quot;: &quot;😀&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
-          &quot;updated_at&quot;: &quot;2023-02-23T20:43:35.108+08:00&quot;,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4853,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 9458,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.525+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.525+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4854,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 6829,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.527+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.527+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4855,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 1292,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.530+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.530+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4856,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 2047,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.532+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.532+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4857,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 7612,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.534+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.534+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4858,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 6220,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.536+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.536+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4859,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 9566,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.538+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.538+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4860,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 2194,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-23T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.540+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.540+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4861,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 3644,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-21T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.541+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.541+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4862,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 6974,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.543+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.543+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 4863,
+      &quot;user_id&quot;: 2829,
+      &quot;amount&quot;: 1650,
+      &quot;notes&quot;: null,
+      &quot;tag_ids&quot;: [
+        7679
+      ],
+      &quot;happen_at&quot;: &quot;2023-02-22T00:00:00.000+08:00&quot;,
+      &quot;created_at&quot;: &quot;2023-02-23T21:15:35.546+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.546+08:00&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 7679,
+          &quot;user_id&quot;: 2829,
+          &quot;name&quot;: &quot;Dol.&quot;,
+          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
+          &quot;updated_at&quot;: &quot;2023-02-23T21:15:35.479+08:00&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
